@@ -1,0 +1,43 @@
+
+.page404{
+  width: 100%;
+}
+.container img{
+  position: relative;
+  left:250px;
+  width:900px;
+  height:800px;
+  bottom: 190px;
+}
+.lines{
+  display: inline;
+  position: relative;
+  bottom: 450px;
+  left:350px;
+}
+.container h3{
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-family: 'Zen Dots', cursive;
+}
+.container p{
+  font-size: 25px;
+  position: relative;
+  left:80px;
+  font-family: 'Fira Sans', sans-serif;
+}
+.container button{
+  position: relative;
+  left: 250px;
+  border-radius: 7px;
+  width:100px;
+  height: 30px;
+  background-color: #FAAB78;
+  font-family: 'Kenia', cursive;
+  border: none;
+}
+.container button:hover{
+  background-color: black;
+  color:  #FAAB78;
+  font-family: 'Kenia', cursive;
+}

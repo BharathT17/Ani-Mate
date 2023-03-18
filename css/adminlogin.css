@@ -1,0 +1,65 @@
+body{
+	background-image: url('https://c4.wallpaperflare.com/wallpaper/21/103/636/anime-crossover-demon-slayer-kimetsu-no-yaiba-dragon-ball-goku-hd-wallpaper-preview.jpg');
+}
+.container{
+	width: 300px;
+	margin: 10% auto;
+	box-shadow: 0 0 80px #333;
+}
+.header h1{
+	font-size: 35px;
+	text-decoration: underline;
+	font-family: 'Orbitron', sans-serif;
+	color: #1A120B;
+	padding-left: 25px;
+	border-radius: 10px;
+	background-color: #E5E5CB;
+}
+.main{text-align: center;}
+.main input{
+	outline: none;
+	margin-bottom: 25px;
+	width: 300px;
+	height: 35px;
+	border-radius: 5px;
+	padding-left: 40px;
+	border: none;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-family: 'Kanit', sans-serif;
+}
+button{
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 30px;
+	background-color: #C58940;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	width: 150px;
+	height: 40px;
+	font-family: 'Bebas Neue', cursive;
+	cursor: pointer;
+}
+button:hover{
+	background-color: #EEE3CB;
+
+}
+i{
+	position: absolute;
+	padding: 2px;
+	font-size: 16px;
+	color: #333;
+}
+.back{
+  position: relative;
+  z-index: 1;
+  height: 30px;
+}
+.bttn{
+ width: 30px;
+ height: 26px;
+ padding: 0;
+ background-color: white;
+ cursor: pointer;
+}

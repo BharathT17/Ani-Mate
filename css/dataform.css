@@ -1,0 +1,83 @@
+body{
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/923/727/796/anime-digital-art-artwork-2d-portrait-display-hd-wallpaper-preview.jpg');
+  background-size:contain;
+}
+
+h1{
+  font-family: 'Racing Sans One', cursive;
+  color: white;
+  padding-top: 20px;
+  padding-left: 40px;
+  font-size: 40px;
+  text-decoration:underline;
+}
+.container{
+  width:300px;
+  margin: 10% auto;
+  border-radius: 25px;
+  margin-top: 50px;
+
+}
+
+#gallery{
+  display: none;
+}
+.gal
+i{
+  padding-right: 25px;
+}
+h2{
+  font-family: 'Black Han Sans', sans-serif;
+  color: #FFC090;
+  padding-left: 40px;
+}
+.end-btn{
+  background-color: #FFFFD0;
+  height: 30px;
+  width: 100px;
+  padding: 7px;
+  border-radius: 20px;
+  font-family: 'Black Han Sans', sans-serif;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+.end-btn:hover{
+  background-color: #ECB365;
+}
+label{
+  color: #E9DAC1;
+  font-family: 'Bungee', cursive;
+}
+.inputs{
+  position: relative;
+  left: 40px;
+  border-radius: 7px;
+  font-family: 'Bungee', cursive;
+}
+.check {
+  padding-left: 40px;
+}
+.radio-check{
+  padding-left: 40px;
+}
+.pic{
+  font-size: 16px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px black;
+  width: 250px;
+  outline: none;
+  margin-bottom: 10px;
+}
+::-webkit-file-upload-button{
+  color: white;
+  background: #206a5d;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 1px 0 1px 1px #6b4559;
+}
+::-webkit-file-upload-button:hover{
+  background: #438a5e;
+}
