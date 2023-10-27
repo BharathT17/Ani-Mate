@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ani-Mate|Admin Image Upload Portal</title>
+    <link rel="icon" href="images/logocutout.png">
+    <style>
+        *{
+            background-color: black;
+            color: white;
+        }
+        div{
+            position: relative;
+            left: 430px;
+            top: 100px;
+        }
+        .btn{
+            width: 150px;
+            height: 40px;
+            background: white;
+            border-radius: 7px;
+            border: 3px solid grey;
+            color: black;
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+	<img src="images/bacck.png" style="width: 25px; height: 25px;" onclick="window.history.back()">
+    <h1><center><strong>Admin Image Upload Portal</strong></center></h1>
+
+<div>
+    <form action="upload.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <h3>Select Image To Upload:</h3>
+        <input type="file" name="fileToUpload" id="fileToUpload" onchange="loadVideo()" accept="image/*">
+        <input class="btn" type="submit" value="Upload Image" name="submit">
+    </form>
+</div>
+<div>
+    <video id="myVideo" style="display: none; width: 1000px; height: 562.500px; position: relative; right: 300px;" muted>
+        <source src="images/itachi.mp4" type="video/mp4">
+    </video>
+</div>
+
+<script>
+function loadVideo() {
+    var input = document.getElementById('fileToUpload');
+    if (input.files && input.files[0]) {
+        var video = document.getElementById('myVideo');
+        video.style.display = 'block';  
+        video.play(); 
+    }
+}
+
+function validateForm() {
+    var fileInput = document.getElementById('fileToUpload');
+    var file = fileInput.files[0];
+    var fileType = file.type;
+    var validImageTypes = ["image/jpeg", "image/png", "image/gif"];
+    
+    if (validImageTypes.indexOf(fileType) === -1) {
+        alert("Please select a valid image file (JPEG, PNG, or GIF).");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</body>
+</html>

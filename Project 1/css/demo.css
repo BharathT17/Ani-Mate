@@ -1,0 +1,44 @@
+body{
+	background-image: url('https://images7.alphacoders.com/866/866538.png');
+
+	background-size: cover;
+}
+
+.container{
+	position: relative;
+	left: 500px;
+	box-sizing: border-box;
+
+}
+h2{
+	font-family: 'Racing Sans One', cursive;
+	color: #D36B00;
+	text-decoration:underline;
+}
+input,textarea,label{
+	font-family: 'Bungee', cursive;
+}
+input,textarea{
+	border-radius: 7px;
+}
+h1{
+	font-family: 'Rowdies', cursive;
+	font-size: 50px;
+	color: #FF8B13;
+	text-decoration: underline;
+}
+.main{
+	margin-left: 40px;
+}
+button{
+	padding: 13px 25px;
+	border-radius: 5px;
+	border: none;
+	background-color: #FF4C29;
+	font-family: 'Racing Sans One', cursive;
+}
+button:hover{
+	background-color: black;
+	color: white;
+}
+

@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+}
+body{
+	background-image: url('https://c4.wallpaperflare.com/wallpaper/347/730/322/uzumaki-naruto-naruto-shippuuden-sea-anime-boys-wallpaper-preview.jpg');
+	background-size: cover;
+}
+td{
+	text-align: center;
+	border: 1px solid #333;
+	border-radius: 7px;
+}
+table{
+	position: relative;
+	left: 300px;
+	width: 50%;
+	
+}
+h2{
+	text-align: center;
+}
+th{
+	text-align: center;
+	border: 1px solid #333;
+	border-radius: 7px;
+}

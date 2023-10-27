@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ani-Mate|Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" href="images/logocutout.png">
+  <style>
+    *{
+      background: black;
+    }
+    #images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+      padding: 10px;
+    }
+    .image-container {
+      position: relative;
+      opacity: 0.7;
+    }
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .image-container button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: none;
+      border: none;
+      font-size: 2em;
+      padding: 5px;
+      color: white;
+
+    }
+    .image-container:hover{
+      opacity: 1;
+      filter: drop-shadow( 10px 10px 100px red);
+      border: 2px solid white;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="head">
+    <img src="images/bacck.png" style="width: 25px; height: 25px;" onclick="window.history.back()">
+    <h1 style="color: white;"><center>GALLERY</center></h1>
+  </div>
+
+  <div id="images"></div>
+
+  <script>
+    fetch('getImages.php')
+      .then(response => response.json())
+      .then(imagesObject => {
+        const imagesDiv = document.getElementById('images');
+        const images = Object.values(imagesObject);
+        images.forEach(image => {
+          // Create div container for each image and button
+          const divElement = document.createElement('div');
+          divElement.className = 'image-container';
+
+          // Create img element
+          const imgElement = document.createElement('img');
+          imgElement.src = image;
+          imgElement.addEventListener('error', () => {
+            console.error('Failed to load image:', image);
+          });
+          imgElement.addEventListener('load', () => {
+            console.log('Image loaded:', image);
+          });
+
+          // Create download button
+          const btnElement = document.createElement('button');
+          btnElement.innerHTML = '<i class="fas fa-download"></i>'; // Font Awesome download icon
+          btnElement.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const a = document.createElement('a');
+            a.href = image;
+            a.download = image.split('/').pop();
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+          });
+
+          // Append img and button to div
+          divElement.appendChild(imgElement);
+          divElement.appendChild(btnElement);
+          // Append div to images div
+          imagesDiv.appendChild(divElement);
+        });
+      })
+      .catch(console.error);
+  </script>
+
+</body>
+</html>

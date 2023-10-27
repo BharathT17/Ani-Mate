@@ -1,0 +1,134 @@
+body{
+    font-family: sans-serif;
+    background-image: url('bg6.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    animation-name: ani;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ani {
+  0%{
+    background-image: url('bg2.jpg');
+  }20%{
+    background-image: url('bg3.jpg');
+  }40%{
+    background-image: url('bg4.jpg');
+  }60%{
+    background-image: url('bg5.jpg');
+  }80%{
+    background-image: url('bg7.jpg');
+  }100%{
+    background-image: url('bg6.jpg');
+  }
+}
+
+.container{
+  width: 380px;
+  margin:10% auto;
+  border-radius: 25px;
+  background-color: rgba(0 0 0 0/ 50%);
+  box-shadow: 0 0 150px #333;
+}
+
+.header{
+  text-align: center;
+  padding-top: 0;
+  padding-right: 50px;
+}
+
+.header h1{
+  color: #333;
+  font-size: 45px;
+  margin-bottom: 80px;
+  font-family: 'Bungee', cursive;
+  color: #b9a3a3;
+  text-decoration: underline;
+  margin-left: 50px;
+}
+
+.main{
+  text-align: center;
+}
+
+.main input, button{
+  width: 300px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.main button{
+  padding-left: 0;
+  background-color: #FEBE8C;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Anton',sans-serif;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.main button:hover{
+  background: #000000;
+  text-decoration: none;
+  color: #FF6D28
+}
+
+.main input:hover{
+  box-shadow: 2px 2px 5px #555;
+  background-color: #ddd;
+}
+
+.main span{
+  position: relative;
+}
+
+.main i{
+  position: absolute;
+  left: 10px;
+  color: #333;
+  font-size: 16px;
+  top: 1px;
+}
+.back{
+  position: relative;
+  top: 3px;
+  left: 5px;
+  height: 30px;
+}
+.bttn{
+ width: 0;
+ height: 0;
+ padding: 0;
+}
+svg{
+  width: 30px;
+  height: 30px;
+}
+.logiin{
+  position: relative;
+  bottom: 30px;
+  left: 85px;
+  width: 200px;
+  font-family: 'Bebas Neue', cursive;
+  padding-left: 10px;
+}
+.logiin a{
+  text-decoration: none;
+}
